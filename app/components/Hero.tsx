@@ -22,7 +22,7 @@ export default function Hero({ id }: HeroProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          John Doe
+          Thomas Doolittle
         </motion.h1>
         <motion.p 
           className="text-xl md:text-2xl mb-8"

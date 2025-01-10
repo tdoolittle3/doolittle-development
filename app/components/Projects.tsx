@@ -9,9 +9,9 @@ interface ProjectsProps {
 }
 
 const projects = [
-  { id: 1, title: 'E-commerce Platform', image: '/placeholder.svg?height=200&width=300', description: 'A full-stack e-commerce solution with real-time inventory management.' },
-  { id: 2, title: 'AI Chatbot', image: '/placeholder.svg?height=200&width=300', description: 'An intelligent chatbot powered by machine learning algorithms.' },
-  { id: 3, title: 'Data Visualization Dashboard', image: '/placeholder.svg?height=200&width=300', description: 'Interactive data visualizations for complex datasets.' },
+  { id: 1, title: 'Joey&apos;s Toy Box', image: '/main_logo.png?height=200&width=300', description: 'A 501c3 foundation website using React, hosted on Azure.' },
+  { id: 2, title: 'Pensacola Pressure Washing', image: '/placeholder.svg?height=200&width=300', description: 'A Vercel powered small business web page.' },
+  { id: 3, title: 'Land Leads', image: '/placeholder.svg?height=200&width=300', description: 'A website for using AI to find real estate deals using Langchain natural language to SQL.' },
 ]
 
 export default function Projects({ id }: ProjectsProps) {
