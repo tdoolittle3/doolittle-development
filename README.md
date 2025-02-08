@@ -51,6 +51,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-**Author:** Your Name  
-**Website:** [yourwebsite.com](https://yourwebsite.com)
+**Author:** Thomas Doolittle  
+**Website:** [doolittle-develoment.vercel.app](https://doolittle-development.vercel.app)
 
