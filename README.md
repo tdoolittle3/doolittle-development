@@ -7,8 +7,6 @@ This is the repository for my personal website, built using [Next.js](https://ne
 - 🎨 Modern and responsive design
 - 🌐 SEO-friendly with metadata optimization
 - 📄 Static site generation (SSG) and server-side rendering (SSR)
-- 📬 Contact form integration
-- 📂 Blog section (optional)
 
 ## Technologies Used
 - [Next.js](https://nextjs.org/) – React framework for production
