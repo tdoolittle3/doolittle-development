@@ -9,10 +9,12 @@ import IndustryExperience from './components/IndustryExperience'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import WelcomeDialog from './components/WelcomeDialog'
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white">  
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white">
+      <Analytics/>  
       <WelcomeDialog/>    
       <Header />
       <motion.div
