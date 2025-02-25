@@ -8,10 +8,12 @@ import About from './components/About'
 import IndustryExperience from './components/IndustryExperience'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import WelcomeDialog from './components/WelcomeDialog'
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white">      
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white">  
+      <WelcomeDialog/>    
       <Header />
       <motion.div
         initial={{ opacity: 0 }}
