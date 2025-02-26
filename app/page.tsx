@@ -10,12 +10,14 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import WelcomeDialog from './components/WelcomeDialog'
 import { Analytics } from "@vercel/analytics/react"
+import ThankYouDialog from './components/ThankYouDialog'
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white">
       <Analytics/>  
-      <WelcomeDialog/>    
+      <WelcomeDialog/> 
+      <ThankYouDialog/>   
       <Header />
       <motion.div
         initial={{ opacity: 0 }}
