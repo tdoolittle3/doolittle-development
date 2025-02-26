@@ -39,9 +39,12 @@ export default function Projects({ id }: ProjectsProps) {
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.5 }}
         >
-          My Projects
-          
+          Projects
+          <p className="p-y-5 text-gray-400 text-lg">
+            Small websites and fun ideas.  Message to collaborate.
+          </p>
         </motion.h2>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div

@@ -52,7 +52,7 @@ export default function About({ id }: AboutProps) {
         >
           <h2 className="text-4xl font-bold mb-4">Technical Expertise</h2>
           <p className="text-gray-400 text-lg">
-            Delivering scalable solutions through deep technical knowledge and innovative approaches
+            
           </p>
         </motion.div>
 
@@ -79,7 +79,7 @@ export default function About({ id }: AboutProps) {
                     {item.keywords.map((keyword, keywordIndex) => (
                       <motion.span
                         key={keywordIndex}
-                        className={`px-3 py-1 rounded-full text-sm bg-gradient-to-r ${item.gradient} bg-opacity-10 border border-gray-700 text-white`}
+                        className={`px-3 py-1 rounded-full text-sm bg-gray-700 bg-opacity-10 border border-gray-700 text-white`}
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
                         transition={{ duration: 0.3, delay: index * 0.1 + keywordIndex * 0.1 }}

@@ -102,7 +102,7 @@ export default function Hero({ id }: HeroProps) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.8 }}
     >
-      View My Work
+      View Projects
     </motion.a>
   </motion.div>
 </section>
