@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Dialog } from '@/components/ui/dialog';
 
 const projects = [
   { 
@@ -209,7 +210,6 @@ const projects = [
         prompts. This made the development process even faster and more
         enjoyable.
       </p>
-      <ImagePlaceholder description="Reusable components generated with ShadCN" />
       <p>
         Now, this Pensacola-based outdoor services site has a polished,
         professional online presence that effectively showcases its

@@ -61,7 +61,7 @@ export default function ExperiencePage({ params }: { params: { slug: string } })
             </div>
 
             <div className="mb-8">
-              <h2 className="text-2xl font-semibold mb-4">Key Responsibilities</h2>
+              <h2 className="text-2xl font-semibold mb-4">Responsibilities</h2>
               <ul className="list-disc list-inside space-y-2 text-gray-300">
                 {experience.responsibilities.map((responsibility, index) => (
                   <li key={index}>{responsibility}</li>
@@ -76,6 +76,12 @@ export default function ExperiencePage({ params }: { params: { slug: string } })
                   <li key={index}>{achievement}</li>
                 ))}
               </ul>
+            </div>
+
+            {/* Narrative Section */}
+            <div className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4"></h2>
+              <div className="mb-12 prose prose-invert max-w-none">{experience.narrative}</div>
             </div>
           </div>
         </div>

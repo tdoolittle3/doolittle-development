@@ -23,7 +23,7 @@ export default function Contact({ id }: ContactProps) {
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.5 }}
         >
-          Contact Me
+          Contact
         </motion.h2>
         <motion.div
           className="max-w-md mx-auto"

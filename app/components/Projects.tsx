@@ -39,7 +39,7 @@ export default function Projects({ id }: ProjectsProps) {
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.5 }}
         >
-          Projects
+          Side Projects
           <p className="p-y-5 text-gray-400 text-lg">
             Small websites and fun ideas.  Message to collaborate.
           </p>
