@@ -14,10 +14,15 @@ export default function WelcomeDialog() {
     const urlParams = new URLSearchParams(window.location.search)
     const fromQR = urlParams.get("from") === "qr"
 
-    if (fromQR) {
-      setIsOpen(true)
-      // Store in session storage so we don't show the dialog again during this session
-      sessionStorage.setItem("welcomed", "true")
+    if (fromQR && !sessionStorage.getItem("welcomed")) {
+      // Add a 3-second delay before showing the dialog
+      const timer = setTimeout(() => {
+        setIsOpen(true)
+        sessionStorage.setItem("welcomed", "true")
+      }, 3000) // Delay matches the total duration of hero text animation
+
+      // Cleanup timer if component unmounts
+      return () => clearTimeout(timer)
     }
   }, [])
 
@@ -46,7 +51,7 @@ export default function WelcomeDialog() {
         </DialogHeader>
         <div className="flex justify-center">
           <Button onClick={() => setIsOpen(false)} className="bg-purple-500 hover:bg-purple-600">
-            Let&apos;s Explore
+            Explore
           </Button>
         </div>
       </DialogContent>
