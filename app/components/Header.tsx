@@ -14,7 +14,7 @@ export default function Header() {
     >
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
         <ul className="flex space-x-8">
-          {['Home', 'Projects', 'About'].map((item) => (
+          {['Home', 'About', 'Projects'].map((item) => (
             <li key={item}>
               <Link
                 href={`#${item.toLowerCase()}`}

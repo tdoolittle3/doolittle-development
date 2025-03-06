@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { useRef } from 'react'
 import * as THREE from 'three'
+import { smoothScrollToDiv } from '@/lib/utils'
 
 interface HeroProps {
   id: string;
@@ -48,6 +49,7 @@ function Particles() {
     </points>
   )
 }
+
 
 export default function Hero({ id }: HeroProps) {
   // Animation variants for the letters
@@ -146,8 +148,8 @@ export default function Hero({ id }: HeroProps) {
             Innovative solutions engineering
           </motion.p>
           <motion.a
-            href="#projects"
-            className="inline-block bg-gradient-to-r from-purple-500 to-indigo-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-purple-600 hover:to-indigo-600 transition duration-300 transform hover:scale-105"
+          onClick={(e) => smoothScrollToDiv(e, "about")}
+            className="cursor-pointer inline-block bg-gradient-to-r from-purple-500 to-indigo-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-purple-600 hover:to-indigo-600 transition duration-300 transform hover:scale-105"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 2.0 }}

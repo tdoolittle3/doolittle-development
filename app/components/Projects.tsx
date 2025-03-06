@@ -21,6 +21,18 @@ const projects = [
     details: "",
     technologies: ['Python', 'Jupyter', 'Postgres', 'LangChain', 'Firebase'], slug:'land-leads'
    },
+   { id: 4, title: 'Garden Bug', image: '/garden_bug_logo.png?height=200&width=300', description: 'An IoT garden monitoring device.',
+    details: "",
+    technologies: ['ESP8266', 'MQTT', 'Device Drivers', 'Telemetry'], slug: 'garden-bug'
+   },
+   { id: 5, title: 'Raspberry Pi', image: '/raspberry_pi.jpg?height=200&width=300', description: 'Some useful applications of a Raspberry Pi home server.',
+    details: "",
+    technologies: ['Networking', 'DNS', 'Linux'], slug: 'raspberry-pi'
+   },
+   { id: 6, title: 'Shark Bait Scuba', image: '/sb_scuba_sticker.png?height=200&width=300', description: 'A small business site for NW Florida dive charters and training.',
+    details: "",
+    technologies: ['Replit', 'TypeScript'], slug: 'shark-bait-scuba'
+   }
 ]
 
 export default function Projects({ id }: ProjectsProps) {

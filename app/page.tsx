@@ -25,9 +25,9 @@ export default function Home() {
         transition={{ duration: 0.5 }}
       >
         <Hero id="home" />
-        <Projects id="projects" />
         <About id="about" />
         <IndustryExperience id="experience" />
+        <Projects id="projects" />     
         <Contact id="contact" />
         <Footer />
       </motion.div>
