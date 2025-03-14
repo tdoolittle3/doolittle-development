@@ -3,6 +3,7 @@ import Link from "next/link"
 import { ArrowLeft, MapPin, Calendar } from "lucide-react"
 import { experiences } from "@/app/data/experiences"
 import { notFound } from "next/navigation"
+import Footer from "@/app/components/Footer"
 
 export async function generateStaticParams() {
   return experiences.map((experience) => ({
@@ -17,7 +18,7 @@ export default function ExperiencePage({ params }: { params: { slug: string } })
     notFound()
   }
 
-  return (
+  return (<>
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white py-20">
       <div className="container mx-auto px-6">
         <Link
@@ -87,6 +88,8 @@ export default function ExperiencePage({ params }: { params: { slug: string } })
         </div>
       </div>
     </div>
+    <Footer />
+  </>
   )
 }
 

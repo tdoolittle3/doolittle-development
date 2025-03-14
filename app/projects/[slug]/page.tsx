@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { projects } from "@/app/data/projects"
+import Footer from '@/app/components/Footer'
 
 
 
@@ -12,6 +13,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
   }
 
   return (
+    <>
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white py-20">
       <div className="container mx-auto px-6">
         <Link href="/#projects" className="text-purple-400 hover:text-purple-300 transition duration-300 mb-8 inline-block">
@@ -26,6 +28,8 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   )
 }
 
