@@ -90,7 +90,7 @@ export default function Hero({ id }: HeroProps) {
       </Canvas>
 
 {/* Gradient Overlay */}
-<div className="absolute inset-0 bg-gradient-to-r from-purple-800 to-indigo-800 opacity-50 pointer-events-none"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-black-800 to-indigo-800 opacity-50 pointer-events-none"></div>
       {/* Animated background elements */}
       <motion.div
         className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-indigo-600/20"
